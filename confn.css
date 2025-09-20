@@ -1,0 +1,73 @@
+:root {
+  --bg: #e9f3ff;
+  --card: #ffffff;
+  --brand: #0b6d9b;
+  --ink: #14313e;
+  --muted: #557687;
+  --btn: #0b6d9b;
+  --btn-text: #ffffff;
+  --radius: 16px;
+  --shadow: 0 8px 20px rgba(7, 64, 99, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.confirmation .card {
+  background: var(--card);
+  padding: 30px 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  color: var(--brand);
+  font-size: 24px;
+}
+
+p {
+  margin: 6px 0;
+  color: var(--ink);
+}
+
+.small {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--btn);
+  color: var(--btn-text);
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  box-shadow: var(--shadow);
+  transition: background 0.2s ease;
+}
+.btn:hover {
+  background: #094f70;
+}

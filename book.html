@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Hajj Package - Ikhlaas Tours & Travels</title>
+  <link rel="stylesheet" href="../styles/book.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Ikhlaas Tours & Travels</h1>
+    <p>Hajj Package Booking Form</p>
+  </header>
+
+  <main class="form-container">
+    <form action="confn.html" method="get" class="booking-form">
+      <h2>Booking Details</h2>
+
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="package">Select Package *</label>
+      <select id="package" name="package" required>
+        <option value="">-- Choose a Package --</option>
+        <option value="barakah">Barakah Economy</option>
+        <option value="noor">Noor Standard</option>
+        <option value="ikhlaas">Ikhlaas Comfort</option>
+        <option value="zamzam">Zamzam Premium</option>
+        <option value="rehmat">Rehmat Family</option>
+        <option value="safa">Safa Executive</option>
+        <option value="haramview">Haram View Luxury</option>
+      </select>
+
+      <label for="travellers">Number of Travellers *</label>
+      <input type="number" id="travellers" name="travellers" min="1" required>
+
+      <label for="message">Additional Notes</label>
+      <textarea id="message" name="message" rows="4" placeholder="Any special requests or details..."></textarea>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Ikhlaas Tours & Travels · All rights reserved</p>
+  </footer>
+</body>
+</html>
+
